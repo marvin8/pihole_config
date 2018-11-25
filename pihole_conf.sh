@@ -44,7 +44,6 @@ echo "Replacing $ADLIST_LIST_DEST with a new adlist.list file"
 install -m 744 "$tmp_adlists_list" "$ADLIST_LIST_DEST"
 rm "$tmp_adlists_list"
 
-
 echo "Updating gravity"
 [[ "$DRY_RUN" -eq "0" ]] && "$PIHOLE_BIN" -g
 
